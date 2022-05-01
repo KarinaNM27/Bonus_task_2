@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int account = 100;
-        int replenishment = 1100;
+        int initialAccount = 100;
+        int replenishmentAmount = 1100;
 
 
-        int bonus = replenishment / 100;
+        int bonus = replenishmentAmount / 100;
         int balance;
-        if (replenishment <= 1000) {
+        if (replenishmentAmount <= 1000) {
             bonus = 0;
-            balance = account + replenishment;
+            balance = initialAccount + replenishmentAmount;
         } else {
-            balance = account + replenishment + bonus;
+            balance = initialAccount + replenishmentAmount + bonus;
         }
 
         System.out.println("Итоговый счёт: " + balance);
